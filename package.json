@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:unit": "mocha --recursive --colors test/index.js test/",
+    "test:unit": "NODE_PATH=. mocha --recursive --colors test/",
     "test:unit:watch": "npm run test:unit -- --watch",
     "test": "npm run test:unit"
   },

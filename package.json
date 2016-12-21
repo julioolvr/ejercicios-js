@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node node/server.js",
     "test:unit": "NODE_PATH=. mocha --recursive --colors test/",
     "test:unit:watch": "npm run test:unit -- --watch",
     "test": "npm run test:unit"
@@ -13,5 +14,8 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^3.2.0"
+  },
+  "dependencies": {
+    "express": "^4.14.0"
   }
 }
